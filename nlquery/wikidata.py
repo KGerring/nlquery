@@ -14,7 +14,7 @@ class WikiDataAnswer(Answer):
     QUANTITY_VALUE = 'http://wikiba.se/ontology#QuantityValue'
 
     def __init__(self, sparql_query, bindings=None, data=None):
-        super(WikiDataAnswer, self).__init__()
+        super().__init__()
         self.sparql_query = sparql_query
 
         if bindings:
