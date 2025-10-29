@@ -1,11 +1,11 @@
-from .api_adapter import RestAdapter
-from .utils import dget
-from dateutil import parser, relativedelta
 from datetime import datetime
 import arrow
 from dateutil.relativedelta import relativedelta
-from .answer import Answer
+from dateutil import parser, relativedelta
 
+from .api_adapter import RestAdapter
+from .answer import Answer
+from .utils import dget
 
 class WikiDataAnswer(Answer):
     """Answer object from WikiData source"""
